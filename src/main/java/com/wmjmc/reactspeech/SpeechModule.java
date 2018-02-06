@@ -20,14 +20,14 @@ import com.wmjmc.reactspeech.LocaleConstants;
 /**
  * Created by JMC on 14/01/2016.
  */
-public class VoiceModule extends ReactContextBaseJavaModule implements ActivityEventListener {
+public class SpeechModule extends ReactContextBaseJavaModule implements ActivityEventListener {
 
     static final int REQUEST_SPEECH_ACTIVITY = 1;
 
     final ReactApplicationContext reactContext;
     private Promise mVoicepromise;
 
-    public VoiceModule(ReactApplicationContext reactContext) {
+    public SpeechModule(ReactApplicationContext reactContext) {
         super(reactContext);
         this.reactContext = reactContext;
         this.reactContext.addActivityEventListener(this);
