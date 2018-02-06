@@ -13,13 +13,13 @@ import java.util.List;
 /**
  * Created by JMC on 14/01/2016.
  */
-public class VoicePackage implements ReactPackage {
+public class SpeechPackage implements ReactPackage {
 
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactApplicationContext) {
         List<NativeModule> modules = new ArrayList<>();
 
-        modules.add(new VoiceModule(reactApplicationContext));
+        modules.add(new SpeechModule(reactApplicationContext));
 
         return modules;
     }
